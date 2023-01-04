@@ -1,5 +1,8 @@
 import useFetch from "../hooks/useFetch"
 
+// styles
+import "./Home.css"
+
 export default function Home() {
     const { data: articles, isPending, error } = useFetch('http://localhost:3000/articles')
     return (
